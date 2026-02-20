@@ -3,7 +3,7 @@ const number = document.querySelector(".heading-number");
 const dice = document.querySelector(".dice");
 
 advice.innerHTML = "Click the dice button to generate advice.";
-// number.innerHTML = "";
+number.innerHTML = "...";
 
 const getAdvice = async () => {
   try {
