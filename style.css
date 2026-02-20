@@ -10,12 +10,20 @@ body {
 .overall {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.instruction {
+  font-weight: 800;
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
 main {
   background-color: hsl(217, 19%, 24%);
-  max-width: 550px;
+  min-width: 350px;
+  max-width: 600px;
   border-radius: 20px;
   padding-top: 3.5rem;
   padding-left: 3rem;
