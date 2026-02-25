@@ -12,7 +12,6 @@ const getAdvice = async () => {
     number.innerHTML = "...";
 
     const adviceDataFetch = await fetch("https://api.adviceslip.com/advice");
-    // const adviceDataFetch = await fetch(`https://api.adviceslip.com/advice`);
     const adviceData = await adviceDataFetch.json();
     number.innerHTML = `${adviceData.slip.id}`;
     advice.innerHTML = `${adviceData.slip.advice}`;
